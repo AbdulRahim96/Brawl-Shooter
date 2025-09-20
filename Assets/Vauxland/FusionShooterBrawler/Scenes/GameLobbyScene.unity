@@ -489,7 +489,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6123349
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5412,7 +5412,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &230860768
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18194,6 +18194,7 @@ MonoBehaviour:
   maps:
   - {fileID: 11400000, guid: e0d9d8dde25a1eb408f42998507b9f4a, type: 2}
   - {fileID: 11400000, guid: 2fca7b007e3c8574a95b0b27a855bb19, type: 2}
+  - {fileID: 11400000, guid: c020e7243b12dbc4b8bca516b82440a3, type: 2}
   characters:
   - {fileID: 11400000, guid: 47033723169e1d340b8dd86d8cd53f2e, type: 2}
   - {fileID: 11400000, guid: 3efa7027d73afc247868661c2370d96c, type: 2}
@@ -21485,7 +21486,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1069277515
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21553,7 +21554,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_IsOn: 1
+  m_IsOn: 0
 --- !u!1 &1069501153
 GameObject:
   m_ObjectHideFlags: 0
@@ -23557,7 +23558,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1143240508
 RectTransform:
   m_ObjectHideFlags: 0
