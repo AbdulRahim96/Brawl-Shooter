@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 7a0e57707fb97d8458c63dfc025f6c35
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261385
+  packageName: Fusion Shooter Brawler
+  packageVersion: 1.21
+  assetPath: Assets/Vauxland/FusionShooterBrawler/Prefabs/UIPrefabs/EntryPrefabs/PlayerKillPopupPrefab.prefab
+  uploadId: 708175

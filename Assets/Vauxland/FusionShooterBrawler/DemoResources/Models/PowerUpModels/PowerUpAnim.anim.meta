@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d568d67994c3eb940a5def163585f648
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261385
+  packageName: Fusion Shooter Brawler
+  packageVersion: 1.21
+  assetPath: Assets/Vauxland/FusionShooterBrawler/DemoResources/Models/PowerUpModels/PowerUpAnim.anim
+  uploadId: 708175

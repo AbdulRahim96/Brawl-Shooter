@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 605444ca9c7e32840ae08b19a32c4385
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261385
+  packageName: Fusion Shooter Brawler
+  packageVersion: 1.21
+  assetPath: Assets/Vauxland/FusionShooterBrawler/Scripts/NetworkScripts/PlayerNetworkInputData.cs
+  uploadId: 708175

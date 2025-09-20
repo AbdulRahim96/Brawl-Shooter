@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 4adaf4b8cd6499e4cae8fb449f0640c7
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261385
+  packageName: Fusion Shooter Brawler
+  packageVersion: 1.21
+  assetPath: Assets/Vauxland/FusionShooterBrawler/GameDataConfigs/WeaponConfigs/Models/MachineGunModel.prefab
+  uploadId: 708175

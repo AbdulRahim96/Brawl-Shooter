@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 744c8a8fe39a3084899c670d92a41896
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261385
+  packageName: Fusion Shooter Brawler
+  packageVersion: 1.21
+  assetPath: Assets/Vauxland/FusionShooterBrawler/GameDataConfigs/CharacterConfigs/Models/BlueTieGuyPrefab.prefab
+  uploadId: 708175

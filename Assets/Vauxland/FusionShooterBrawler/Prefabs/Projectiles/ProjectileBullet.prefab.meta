@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: fa9c985f2f274be4b88b69340ae85317
+labels:
+- FusionPrefab
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261385
+  packageName: Fusion Shooter Brawler
+  packageVersion: 1.21
+  assetPath: Assets/Vauxland/FusionShooterBrawler/Prefabs/Projectiles/ProjectileBullet.prefab
+  uploadId: 708175

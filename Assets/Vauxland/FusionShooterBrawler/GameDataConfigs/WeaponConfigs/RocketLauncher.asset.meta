@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5febaef5a75a57144b613fa0844bdcb9
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261385
+  packageName: Fusion Shooter Brawler
+  packageVersion: 1.21
+  assetPath: Assets/Vauxland/FusionShooterBrawler/GameDataConfigs/WeaponConfigs/RocketLauncher.asset
+  uploadId: 708175

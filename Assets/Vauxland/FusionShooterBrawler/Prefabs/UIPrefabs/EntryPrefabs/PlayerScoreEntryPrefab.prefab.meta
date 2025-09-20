@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 4679c84c37898a74c8ad15d747315d24
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261385
+  packageName: Fusion Shooter Brawler
+  packageVersion: 1.21
+  assetPath: Assets/Vauxland/FusionShooterBrawler/Prefabs/UIPrefabs/EntryPrefabs/PlayerScoreEntryPrefab.prefab
+  uploadId: 708175

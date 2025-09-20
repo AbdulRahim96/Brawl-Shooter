@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: d9bd0b3c60ffeb24aba0affe108b3773
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261385
+  packageName: Fusion Shooter Brawler
+  packageVersion: 1.21
+  assetPath: Assets/Vauxland/FusionShooterBrawler/Scripts/LobbyScripts/EquipButton.cs
+  uploadId: 708175

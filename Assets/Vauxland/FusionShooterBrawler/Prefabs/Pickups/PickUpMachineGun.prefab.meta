@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 028f10cf4f6e07148aede41877d3f2ce
+labels:
+- FusionPrefab
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261385
+  packageName: Fusion Shooter Brawler
+  packageVersion: 1.21
+  assetPath: Assets/Vauxland/FusionShooterBrawler/Prefabs/Pickups/PickUpMachineGun.prefab
+  uploadId: 708175

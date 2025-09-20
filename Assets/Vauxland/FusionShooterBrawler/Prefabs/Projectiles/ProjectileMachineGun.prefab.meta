@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 850b10381881d5247b49f8d977f3c9d4
+labels:
+- FusionPrefab
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261385
+  packageName: Fusion Shooter Brawler
+  packageVersion: 1.21
+  assetPath: Assets/Vauxland/FusionShooterBrawler/Prefabs/Projectiles/ProjectileMachineGun.prefab
+  uploadId: 708175

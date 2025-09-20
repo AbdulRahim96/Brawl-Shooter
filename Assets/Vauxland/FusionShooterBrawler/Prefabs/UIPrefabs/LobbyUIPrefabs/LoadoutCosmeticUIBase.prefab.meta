@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 3c752e9f4737e4448b3f9e7d8ca4eb40
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261385
+  packageName: Fusion Shooter Brawler
+  packageVersion: 1.21
+  assetPath: Assets/Vauxland/FusionShooterBrawler/Prefabs/UIPrefabs/LobbyUIPrefabs/LoadoutCosmeticUIBase.prefab
+  uploadId: 708175

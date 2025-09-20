@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 31df40d018b87a94783e8170b63b4833
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261385
+  packageName: Fusion Shooter Brawler
+  packageVersion: 1.21
+  assetPath: Assets/Vauxland/FusionShooterBrawler/GameDataConfigs/StatEffects/PickupStatEffects/AddSpeed.asset
+  uploadId: 708175

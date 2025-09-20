@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: cc4bd925a665f574d8971b1c617c8897
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261385
+  packageName: Fusion Shooter Brawler
+  packageVersion: 1.21
+  assetPath: Assets/Vauxland/FusionShooterBrawler/Prefabs/UIPrefabs/LobbyUIPrefabs/LobbyCanvas.prefab
+  uploadId: 708175

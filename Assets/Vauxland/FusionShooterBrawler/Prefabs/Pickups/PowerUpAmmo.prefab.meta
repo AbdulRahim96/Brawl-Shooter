@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: b97e6f5ba125d6a4b997b50f59224d73
+labels:
+- FusionPrefab
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261385
+  packageName: Fusion Shooter Brawler
+  packageVersion: 1.21
+  assetPath: Assets/Vauxland/FusionShooterBrawler/Prefabs/Pickups/PowerUpAmmo.prefab
+  uploadId: 708175

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: b0d324fd35107c94e86dd054f14be5b3
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261385
+  packageName: Fusion Shooter Brawler
+  packageVersion: 1.21
+  assetPath: Assets/Vauxland/FusionShooterBrawler/Scripts/UtilityScripts/WeaponConfig.cs
+  uploadId: 708175

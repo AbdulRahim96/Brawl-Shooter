@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 127452511e63ef64993af2e7ca4f03b0
+labels:
+- FusionPrefab
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261385
+  packageName: Fusion Shooter Brawler
+  packageVersion: 1.21
+  assetPath: Assets/Vauxland/FusionShooterBrawler/Prefabs/Pickups/PowerUpHeal.prefab
+  uploadId: 708175

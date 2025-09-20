@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 66ba526b9b9576948b89f2c53eef77ff
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261385
+  packageName: Fusion Shooter Brawler
+  packageVersion: 1.21
+  assetPath: Assets/Vauxland/FusionShooterBrawler/DemoResources/Materials/MuzzleFlashGlow.mat
+  uploadId: 708175

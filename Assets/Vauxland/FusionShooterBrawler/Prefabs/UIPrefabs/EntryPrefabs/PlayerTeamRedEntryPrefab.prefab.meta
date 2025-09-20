@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 15d331f00c0dfc742b5a2858d89fe144
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261385
+  packageName: Fusion Shooter Brawler
+  packageVersion: 1.21
+  assetPath: Assets/Vauxland/FusionShooterBrawler/Prefabs/UIPrefabs/EntryPrefabs/PlayerTeamRedEntryPrefab.prefab
+  uploadId: 708175

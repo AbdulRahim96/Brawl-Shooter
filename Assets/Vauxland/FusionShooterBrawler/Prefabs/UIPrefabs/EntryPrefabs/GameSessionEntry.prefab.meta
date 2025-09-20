@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 9af9a867c14eced45bd30ccda0b9d257
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261385
+  packageName: Fusion Shooter Brawler
+  packageVersion: 1.21
+  assetPath: Assets/Vauxland/FusionShooterBrawler/Prefabs/UIPrefabs/EntryPrefabs/GameSessionEntry.prefab
+  uploadId: 708175

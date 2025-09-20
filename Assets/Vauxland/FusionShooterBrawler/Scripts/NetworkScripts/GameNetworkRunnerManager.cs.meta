@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 8704de54b243d4447a6937cb530f90f9
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261385
+  packageName: Fusion Shooter Brawler
+  packageVersion: 1.21
+  assetPath: Assets/Vauxland/FusionShooterBrawler/Scripts/NetworkScripts/GameNetworkRunnerManager.cs
+  uploadId: 708175

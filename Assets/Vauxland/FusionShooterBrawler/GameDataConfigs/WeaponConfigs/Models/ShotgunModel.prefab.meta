@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 053d7587112657f479fd21828956f6d6
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261385
+  packageName: Fusion Shooter Brawler
+  packageVersion: 1.21
+  assetPath: Assets/Vauxland/FusionShooterBrawler/GameDataConfigs/WeaponConfigs/Models/ShotgunModel.prefab
+  uploadId: 708175

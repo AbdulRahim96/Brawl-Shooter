@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 863439474cbfcca4b92e0b8db420cbee
+labels:
+- FusionPrefab
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261385
+  packageName: Fusion Shooter Brawler
+  packageVersion: 1.21
+  assetPath: Assets/Vauxland/FusionShooterBrawler/Prefabs/Projectiles/ProjectileRocket.prefab
+  uploadId: 708175

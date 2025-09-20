@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 2abf0432c00fe644a9976e4899893ddb
+labels:
+- FusionPrefab
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261385
+  packageName: Fusion Shooter Brawler
+  packageVersion: 1.21
+  assetPath: Assets/Vauxland/FusionShooterBrawler/Prefabs/PlayerPrefabs/PlayerPrefab.prefab
+  uploadId: 708175

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 447a3ff5d26dd51458469019b24f2289
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261385
+  packageName: Fusion Shooter Brawler
+  packageVersion: 1.21
+  assetPath: Assets/Vauxland/FusionShooterBrawler/GameDataConfigs/CharacterConfigs/Models/GreenTieGuyPrefab.prefab
+  uploadId: 708175

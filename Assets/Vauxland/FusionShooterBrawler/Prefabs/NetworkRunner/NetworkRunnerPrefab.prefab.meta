@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2bdc471726a412e419e7d8cfee0800ce
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261385
+  packageName: Fusion Shooter Brawler
+  packageVersion: 1.21
+  assetPath: Assets/Vauxland/FusionShooterBrawler/Prefabs/NetworkRunner/NetworkRunnerPrefab.prefab
+  uploadId: 708175

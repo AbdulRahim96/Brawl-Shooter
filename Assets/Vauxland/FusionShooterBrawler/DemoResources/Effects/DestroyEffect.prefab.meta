@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 075be8e3d61a1d544be968a92a5bfd42
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261385
+  packageName: Fusion Shooter Brawler
+  packageVersion: 1.21
+  assetPath: Assets/Vauxland/FusionShooterBrawler/DemoResources/Effects/DestroyEffect.prefab
+  uploadId: 708175

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 11e0fd7c97d3bbe4781f63ab39f02c9a
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261385
+  packageName: Fusion Shooter Brawler
+  packageVersion: 1.21
+  assetPath: Assets/Vauxland/FusionShooterBrawler/GameDataConfigs/WeaponConfigs/Models/BazookaGunModel.prefab
+  uploadId: 708175

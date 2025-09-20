@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a1cb3c8200e08c842ab5ce3933339c2d
+labels:
+- FusionPrefab
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261385
+  packageName: Fusion Shooter Brawler
+  packageVersion: 1.21
+  assetPath: Assets/Vauxland/FusionShooterBrawler/Prefabs/Pickups/PowerUpBodyArmor.prefab
+  uploadId: 708175

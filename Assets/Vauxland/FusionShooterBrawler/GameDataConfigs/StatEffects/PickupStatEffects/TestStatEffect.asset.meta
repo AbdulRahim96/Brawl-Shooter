@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 887e4a67b5c951649a5d2a6cb18d56db
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261385
+  packageName: Fusion Shooter Brawler
+  packageVersion: 1.21
+  assetPath: Assets/Vauxland/FusionShooterBrawler/GameDataConfigs/StatEffects/PickupStatEffects/TestStatEffect.asset
+  uploadId: 708175

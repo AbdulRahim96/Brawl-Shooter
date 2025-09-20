@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 149e8dcc5f1a1e1458d9d87e7608b562
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261385
+  packageName: Fusion Shooter Brawler
+  packageVersion: 1.21
+  assetPath: Assets/Vauxland/FusionShooterBrawler/DemoResources/Materials/BulletMat.mat
+  uploadId: 708175

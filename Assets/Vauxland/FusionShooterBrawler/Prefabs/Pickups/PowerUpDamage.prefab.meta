@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c8aefaf143ca1ca4fb9eda49d1243b8e
+labels:
+- FusionPrefab
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261385
+  packageName: Fusion Shooter Brawler
+  packageVersion: 1.21
+  assetPath: Assets/Vauxland/FusionShooterBrawler/Prefabs/Pickups/PowerUpDamage.prefab
+  uploadId: 708175
