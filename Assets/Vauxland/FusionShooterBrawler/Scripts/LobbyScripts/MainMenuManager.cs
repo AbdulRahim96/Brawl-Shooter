@@ -346,7 +346,7 @@ namespace Vauxland.FusionBrawler
             var sessionProperties = new Dictionary<string, SessionProperty>()
             {
                 { "MatchType", (int)selectedMatchType },
-                { "UseBots", useBots ? 1 : 0 },
+                { "UseBots", 0 }, // useBots ? 1 : 0 },
                 { "BotAmount", botAmount },
                 { "FriendlyFire", friendlyFire ? 1 : 0 },
                 { "MaxScoreAmount", maxScoreAmount },

@@ -7,6 +7,7 @@
  * See https://unity3d.com/legal/as_terms for more information.
  */
 
+using CandyCoded.HapticFeedback;
 using Fusion;
 using System.Collections;
 using UnityEngine;
@@ -82,6 +83,8 @@ namespace Vauxland.FusionBrawler
                     {
                         cameraFollow.StartShake();
                     }
+
+                    HapticFeedback.HeavyFeedback(); // trigger haptic feedback on shooting
                 }
             }
 

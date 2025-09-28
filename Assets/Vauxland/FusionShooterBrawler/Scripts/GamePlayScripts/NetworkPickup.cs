@@ -41,6 +41,12 @@ namespace Vauxland.FusionBrawler
             if (other.CompareTag("Player")) // if a player walks into the projectile
             {
                 var playerStatsManager = other.GetComponent<PlayerStatsManager>();
+                if(Object == null)
+                    print("Object is null");
+                else
+                    print("Object is not null");
+
+
                 if (playerStatsManager != null && Object.HasStateAuthority)
                 {
                     ApplyPowerUp(playerStatsManager);

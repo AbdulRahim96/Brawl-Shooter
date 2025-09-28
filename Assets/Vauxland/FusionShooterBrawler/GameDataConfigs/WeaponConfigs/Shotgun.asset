@@ -39,6 +39,6 @@ MonoBehaviour:
   reloadDuration: 1
   reloadClipSize: 5
   ammoAmountShotUse: 1
-  shootFx: {fileID: 8300000, guid: 06ada5590eba8d6489b36c6f3c54ff78, type: 3}
-  reloadFx: {fileID: 0}
-  emptyFx: {fileID: 0}
+  shootFx: {fileID: 8300000, guid: af66162561d2eed40ad49268cab318bb, type: 3}
+  reloadFx: {fileID: 8300000, guid: 7ccca95d883fcf24392638beea988073, type: 3}
+  emptyFx: {fileID: 8300000, guid: 1947c6e445e8e644f8bd214dea1633ff, type: 3}
