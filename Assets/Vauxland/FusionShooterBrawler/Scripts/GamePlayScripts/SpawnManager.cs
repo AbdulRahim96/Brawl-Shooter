@@ -71,7 +71,6 @@ namespace Vauxland.FusionBrawler
                 }
 
                 SpawnPlayers(player);
-
             }
 
             // if we are using bots spawn the bots
@@ -172,7 +171,7 @@ namespace Vauxland.FusionBrawler
 
             for (int i = 0; i < botsToSpawn; i++)
             {
-                if (_matchManager.matchType == MatchType.DeathMatch)
+                if (_matchManager.matchType == MatchType.DeathMatch || _matchManager.matchType == MatchType.GunGame)
                 {
                     spawnPosition = GetUnoccupiedSpawnPoint(playerSpawnPoints, 5f, "Player");
 
@@ -240,7 +239,7 @@ namespace Vauxland.FusionBrawler
                 return;
             }
 
-            if (_matchManager.matchType == MatchType.DeathMatch)
+            if (_matchManager.matchType == MatchType.DeathMatch || _matchManager.matchType == MatchType.GunGame)
             {
                 spawnPosition = GetUnoccupiedSpawnPoint(playerSpawnPoints, 5f, "Player");
             }
@@ -267,7 +266,7 @@ namespace Vauxland.FusionBrawler
                 int teamInt = (PlayerTeams[playerId] == PlayerTeam.Red) ? 1 : 2;
                 playerController.SetTeamInt(teamInt);
             }
-            else if (matchManager.matchType == MatchType.DeathMatch)
+            else if (matchManager.matchType == MatchType.DeathMatch || _matchManager.matchType == MatchType.GunGame)
             {
                 playerController.SetTeamInt(0);
             }
@@ -416,6 +415,22 @@ namespace Vauxland.FusionBrawler
             if (PlayerTeams.ContainsKey(playerId))
             {
                 PlayerTeams.Remove(playerId);
+            }
+        }
+
+        public void ChangeWeapon(string val) // for testing only
+        {
+            int weaponID = int.Parse(val);
+            foreach (var player in CurrentPlayers)
+            {
+                // check for local player
+                if (player.Value.HasInputAuthority)
+                {
+                    var _PlayerStatsManager = player.Value.GetComponent<PlayerStatsManager>();
+                    _PlayerStatsManager.AdvanceWeapon(weaponID);
+                    return;
+                }
+
             }
         }
     }

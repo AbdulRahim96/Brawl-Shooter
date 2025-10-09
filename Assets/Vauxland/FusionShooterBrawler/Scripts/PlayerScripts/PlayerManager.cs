@@ -35,7 +35,6 @@ namespace Vauxland.FusionBrawler
         public override void Spawned()
         {
             PlayerSetUp = false; // before other scripts can access this script
-
             // assign all of player components
             _playerController = GetComponent<PlayerNetworkController>();
             _playerStats = GetComponent<PlayerStatsManager>();

@@ -67,6 +67,9 @@ namespace Vauxland.FusionBrawler
         private List<NetworkObject> _botPlayers = new List<NetworkObject>(); // list of all of our bots
         private ChangeDetector _changeDetector;
 
+        public int[] requiredKillsForGunGame;
+        public int currentKills;
+        public int _currentGunGameLevel = 0;
         private void Awake()
         {
             _spawnManager = FindObjectOfType<SpawnManager>(); // get our spawn manager
@@ -174,6 +177,7 @@ namespace Vauxland.FusionBrawler
                 TeamBlueScore = 0;
             }
 
+
         }
 
         // updating the teams score when a player gets a kill
@@ -192,7 +196,22 @@ namespace Vauxland.FusionBrawler
                         TeamBlueScore += score;
                     }
                 }
-            }           
+            }
+        }
+
+        public void GunGameUpdates(PlayerNetworkController player)
+        {
+            if (matchType == MatchType.GunGame)
+            {
+                currentKills++;
+                if (currentKills >= requiredKillsForGunGame[_currentGunGameLevel])
+                {
+                    _currentGunGameLevel++;
+                    currentKills = 0;
+                    player.gameObject.GetComponent<PlayerStatsManager>().AdvanceWeapon(_currentGunGameLevel);
+                    print($"GunGame Level Up! {player.gameObject.name} Now at level {_currentGunGameLevel}");
+                }
+            }
         }
 
         // syncs changing of Ui for team score across all clients
@@ -508,7 +527,8 @@ namespace Vauxland.FusionBrawler
     public enum MatchType // different Match Types
     {
         DeathMatch,
-        TeamDeathMatch
+        TeamDeathMatch,
+        GunGame
     }
 }
 

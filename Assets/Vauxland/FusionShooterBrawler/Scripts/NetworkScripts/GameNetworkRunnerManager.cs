@@ -167,6 +167,7 @@ namespace Vauxland.FusionBrawler
                     Debug.LogError($"Failed to Start: {result.ShutdownReason}");
                 }
             }
+
         }
 
         // joins the Fusions lobby system to find available games

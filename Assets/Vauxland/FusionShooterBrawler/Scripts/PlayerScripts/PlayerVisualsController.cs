@@ -35,6 +35,7 @@ namespace Vauxland.FusionBrawler
         [Header("PlayerEffects")]
         public GameObject deathEffect; // the effect that plays when the player dies
         public GameObject shieldEffect; // the shield effect that plays when the player gets a shield on respawn
+        public ParticleSystem onAdvance;
         public AudioSource fxPlayer; // the audio source to play sound effects from the player
 
         [Header("PlayerSetup")]
@@ -48,6 +49,7 @@ namespace Vauxland.FusionBrawler
         public GameObject noTeamVisual; // the no team UI visual seen in deathmatch
         public GameObject[] teamRedVisuals; // team reds visuals when on team red
         public GameObject[] teamBlueVisuals; // team blues visuals when on team blue
+
 
         private Animator cacheAnimator; // the players character model configs' animator
         protected PlayerManager _playerManager;

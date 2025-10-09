@@ -323,7 +323,9 @@ namespace Vauxland.FusionBrawler
 
             SetPlayerGameData();
 
-            MatchType selectedMatchType = (matchType == 0) ? MatchType.DeathMatch : MatchType.TeamDeathMatch;
+            //  MatchType selectedMatchType = (matchType == 0) ? MatchType.DeathMatch : MatchType.TeamDeathMatch;
+
+            MatchType selectedMatchType = MatchType.GunGame;
 
             // get the selected map
             MapConfig selectedMap = PlayerGameData.GetMap(selectedMapIndex);
@@ -347,7 +349,7 @@ namespace Vauxland.FusionBrawler
             {
                 { "MatchType", (int)selectedMatchType },
                 { "UseBots", 0 }, // useBots ? 1 : 0 },
-                { "BotAmount", botAmount },
+                { "BotAmount", 0 },
                 { "FriendlyFire", friendlyFire ? 1 : 0 },
                 { "MaxScoreAmount", maxScoreAmount },
                 { "MatchTimeLength", matchTimeLengthInt },
@@ -516,6 +518,8 @@ namespace Vauxland.FusionBrawler
                 gameMode = MatchType.DeathMatch;
             else if (matchType == 1)
                 gameMode = MatchType.TeamDeathMatch;
+            else if(matchType == 2)
+                gameMode = MatchType.GunGame;
 
             // load selected region
             selectedRegion = PlayerLocalSave.GetSelectedRegion();

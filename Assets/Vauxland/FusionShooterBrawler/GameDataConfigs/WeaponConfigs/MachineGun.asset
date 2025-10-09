@@ -20,7 +20,7 @@ MonoBehaviour:
   delayBeforeShooting: 0.3
   launchOffset: 1.2
   destructibleDamage: 5
-  animID: 1
+  animID: 4
   isShotgun: 0
   shotgunPelletCount: 5
   shotSpreadAngleHorizontal: 10
@@ -28,14 +28,14 @@ MonoBehaviour:
   weaponStats:
     stats:
     - statType: 3
-      value: 20
+      value: 30
     - statType: 2
       value: 200
     - statType: 4
       value: 15
   reloadOneAmmoAtATime: 0
   reloadDuration: 2.2
-  reloadClipSize: 20
+  reloadClipSize: 30
   ammoAmountShotUse: 1
   shootFx: {fileID: 8300000, guid: af66162561d2eed40ad49268cab318bb, type: 3}
   reloadFx: {fileID: 8300000, guid: 7ccca95d883fcf24392638beea988073, type: 3}

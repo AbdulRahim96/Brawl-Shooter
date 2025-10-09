@@ -19,8 +19,8 @@ MonoBehaviour:
   delayBetweenShots: 0.5
   delayBeforeShooting: 0.5
   launchOffset: 0
-  destructibleDamage: 5
-  animID: 4
+  destructibleDamage: 4
+  animID: 1
   isShotgun: 0
   shotgunPelletCount: 5
   shotSpreadAngleHorizontal: 10
@@ -30,9 +30,9 @@ MonoBehaviour:
     - statType: 3
       value: 10
     - statType: 2
-      value: 30
+      value: 300
     - statType: 4
-      value: 30
+      value: 15
     - statType: 5
       value: 1
   reloadOneAmmoAtATime: 0

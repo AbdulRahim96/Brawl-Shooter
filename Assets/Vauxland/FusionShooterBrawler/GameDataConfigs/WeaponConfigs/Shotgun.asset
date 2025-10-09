@@ -19,8 +19,8 @@ MonoBehaviour:
   delayBetweenShots: 1.2
   delayBeforeShooting: 0.6
   launchOffset: 0
-  destructibleDamage: 10
-  animID: 2
+  destructibleDamage: 15
+  animID: 3
   isShotgun: 1
   shotgunPelletCount: 5
   shotSpreadAngleHorizontal: 10

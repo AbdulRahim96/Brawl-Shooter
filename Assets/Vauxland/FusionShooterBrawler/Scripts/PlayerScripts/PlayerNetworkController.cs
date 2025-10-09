@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Fusion;
 using System;
+using System.IO;
 
 namespace Vauxland.FusionBrawler
 {
@@ -150,7 +151,9 @@ namespace Vauxland.FusionBrawler
         {
             Kills += kills;
             _playerManager._matchManager.UpdateMatchScore(TeamInt, kills); // updates the teams scores on a kill
-            AudioManager.instance.PlayCallback?.Invoke(3);                                                              
+            AudioManager.instance.PlayCallback?.Invoke(3);
+
+            _playerManager._matchManager.GunGameUpdates(this); // updates the players gun in GunGame mode
         }
 
         // records the players deaths
