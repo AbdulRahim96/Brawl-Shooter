@@ -29,6 +29,7 @@ namespace Vauxland.FusionBrawler
         [HideInInspector] public PlayerInputManager _playerInput = null;
         [HideInInspector] public MobileControls _mobileControls = null;
         [HideInInspector] public BotController _botController = null;
+        [HideInInspector] public PlayerData _playerData = null;
         [Networked] public NetworkBool PlayerSetUp { get; set; }
 
         // called when the player object is spawned into the game
@@ -46,6 +47,7 @@ namespace Vauxland.FusionBrawler
             _networkCharacterController = GetComponent<NetworkCharacterController>();
             _matchManager = FindObjectOfType<GameMatchManager>();
             _matchUI = FindObjectOfType<MatchUIHandler>();
+            _playerData = GetComponent<PlayerData>();
 
             // handle setup for the local player (with input authority)
             if (Object.HasInputAuthority)

@@ -92,6 +92,7 @@ namespace Vauxland.FusionBrawler
         {
             var nickName = PlayerGameData.PlayerData.GetPlayerNickName();
             RpcSetPlayerNickName(nickName);
+            RpcSetPlayerId(nickName);
         }
 
         // sets the bots nickname
@@ -309,6 +310,13 @@ namespace Vauxland.FusionBrawler
         {
             if (string.IsNullOrEmpty(nickName)) return;
             PlayerNickName = nickName;
+        }
+
+        [Rpc(sources: RpcSources.InputAuthority, targets: RpcTargets.All)]
+        private void RpcSetPlayerId(string id)
+        {
+            if (string.IsNullOrEmpty(id)) return;
+            _playerManager._playerData.playerId = id;
         }
 
         // rpc used to send player team to the Host

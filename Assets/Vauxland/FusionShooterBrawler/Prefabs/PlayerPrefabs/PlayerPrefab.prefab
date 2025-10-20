@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 6934551542241411191}
   - component: {fileID: 1620349991430973267}
   - component: {fileID: 6995037995403636281}
+  - component: {fileID: 135438089892307488}
   m_Layer: 11
   m_Name: PlayerPrefab
   m_TagString: Player
@@ -522,6 +523,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &135438089892307488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023376905122530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1036c479dd462a0449cc068ffd79b546, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerData
+  playerId: 
+  playerName: 
+  currentKillStreak: 0
+  lastKillTime: 0
 --- !u!1 &1150284355898968
 GameObject:
   m_ObjectHideFlags: 0

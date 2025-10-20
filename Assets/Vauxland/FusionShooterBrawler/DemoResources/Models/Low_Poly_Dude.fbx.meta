@@ -1,7 +1,14 @@
 fileFormatVersion: 2
 guid: 1187fb4f25b7bf24a9836cec888f66f3
+AssetOrigin:
+  serializedVersion: 1
+  productId: 261385
+  packageName: Fusion Shooter Brawler
+  packageVersion: 1.21
+  assetPath: Assets/Vauxland/FusionShooterBrawler/DemoResources/Models/Low_Poly_Dude.fbx
+  uploadId: 708175
 ModelImporter:
-  serializedVersion: 21300
+  serializedVersion: 24200
   internalIDToNameTable: []
   externalObjects: {}
   materials:
@@ -16,15 +23,13 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 1
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -214,6 +219,7 @@ ModelImporter:
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
+    importPhysicalCameras: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -231,6 +237,9 @@ ModelImporter:
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
     optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
@@ -255,7 +264,212 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: Low_Poly_Dude(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dude
+      parentName: Low_Poly_Dude(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Armature
+      parentName: Low_Poly_Dude(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Root
+      parentName: Armature
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 0.9999999, z: 0.9999999}
+    - name: FootIKTargetR
+      parentName: Root
+      position: {x: -0.6347067, y: 0.40991604, z: 0.08717552}
+      rotation: {x: 0.0014257119, y: 0.7071054, z: 0.7071054, w: 0.0014257119}
+      scale: {x: 0.99999976, y: 0.9999999, z: 0.9999999}
+    - name: FootR
+      parentName: FootIKTargetR
+      position: {x: -0.000000023981556, y: 0.003494382, z: -0.000000099418685}
+      rotation: {x: -0.6307729, y: -0.0053011435, z: -0.02165649, w: 0.77564716}
+      scale: {x: 1.0000002, y: 0.99999994, z: 1.0000001}
+    - name: FootTipR
+      parentName: FootR
+      position: {x: -0.000000014822945, y: 0.9745245, z: 0.000000014901161}
+      rotation: {x: -0.02167853, y: 0.0011126195, z: -0.004992154, w: 0.999752}
+      scale: {x: 0.99999976, y: 0.9999999, z: 0.9999997}
+    - name: FootTipR_end
+      parentName: FootTipR
+      position: {x: -0, y: 0.7634514, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FootIKTargetL
+      parentName: Root
+      position: {x: 0.626836, y: 0.40991604, z: 0.08717552}
+      rotation: {x: 0.0014257119, y: 0.7071054, z: 0.7071054, w: 0.0014257119}
+      scale: {x: 0.99999976, y: 0.9999999, z: 0.9999999}
+    - name: FootL
+      parentName: FootIKTargetL
+      position: {x: -0.007870639, y: 0.003494382, z: 0.000031660078}
+      rotation: {x: -0.6305777, y: 0.0053007454, z: 0.026743239, w: 0.7756471}
+      scale: {x: 1.0000002, y: 0.99999994, z: 1.0000001}
+    - name: FootTipL
+      parentName: FootL
+      position: {x: 0.000000045362867, y: 0.9745245, z: -0.000000015832484}
+      rotation: {x: -0.021637846, y: -0.0011126989, z: 0.00516687, w: 0.9997519}
+      scale: {x: 0.99999976, y: 0.9999999, z: 0.9999997}
+    - name: FootTipL_end
+      parentName: FootTipL
+      position: {x: -0, y: 0.7634514, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hips
+      parentName: Root
+      position: {x: -0, y: 3.5242395, z: 0}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Spine1
+      parentName: Hips
+      position: {x: -0, y: 1, z: 0}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Spine2
+      parentName: Spine1
+      position: {x: -0, y: 1.1220374, z: 0}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Neck
+      parentName: Spine2
+      position: {x: -0, y: 1.1900401, z: 0}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Head
+      parentName: Neck
+      position: {x: -0, y: 1.0880361, z: 0}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Head_end
+      parentName: Head
+      position: {x: -0, y: 3.660789, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoulderR
+      parentName: Spine2
+      position: {x: -0, y: 1.1900401, z: 0}
+      rotation: {x: 0.000000029802322, y: -0.000000029802322, z: 0.69316924, w: 0.7207749}
+      scale: {x: 0.9999999, y: 0.9999999, z: 1}
+    - name: Arm1R
+      parentName: ShoulderR
+      position: {x: -0.00000025331974, y: 1.4518212, z: 2.220446e-15}
+      rotation: {x: 0.045983467, y: -0.7016254, z: -0.03159467, w: -0.71035844}
+      scale: {x: 0.9727803, y: 0.97278047, z: 0.97278047}
+    - name: Arm2R
+      parentName: Arm1R
+      position: {x: 0.0000000037252903, y: 1.8583217, z: 0.00000008306233}
+      rotation: {x: -0.029954152, y: -0.0072404724, z: -0.048478514, w: -0.9983487}
+      scale: {x: 0.9999999, y: 1.0000004, z: 0.99999994}
+    - name: HandR
+      parentName: Arm2R
+      position: {x: 0.00000020861626, y: 1.4164497, z: -0.00000020861626}
+      rotation: {x: 0.05663812, y: -0.7091857, z: -0.019219995, w: 0.70248014}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+    - name: FingersR
+      parentName: HandR
+      position: {x: 0.000000059604645, y: 0.49116194, z: -0.000000059604645}
+      rotation: {x: -0.014269823, y: 0.00364387, z: 0.038459405, w: 0.99915165}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: FingersR_end
+      parentName: FingersR
+      position: {x: -0, y: 0.974599, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ThumbR
+      parentName: HandR
+      position: {x: -0.00760442, y: 0.41227427, z: 0.18170464}
+      rotation: {x: 0.2773832, y: 0.628475, z: 0.2665846, w: 0.67602557}
+      scale: {x: 0.9999995, y: 1.0000002, z: 1.0000001}
+    - name: ThumbR_end
+      parentName: ThumbR
+      position: {x: -0, y: 1.0224031, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ShoulderL
+      parentName: Spine2
+      position: {x: -0, y: 1.1900401, z: 0}
+      rotation: {x: 0.000000029802322, y: 0.000000029802322, z: -0.69316924, w: 0.7207749}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Arm1L
+      parentName: ShoulderL
+      position: {x: -0.00000031292439, y: 1.4518213, z: 2.6645353e-15}
+      rotation: {x: 0.045983385, y: 0.7016254, z: 0.031594735, w: -0.7103585}
+      scale: {x: 0.99999994, y: 0.9999997, z: 0.9999999}
+    - name: Arm2L
+      parentName: Arm1L
+      position: {x: -0.000000029802322, y: 1.8583232, z: 0.00000022351742}
+      rotation: {x: 0.029954137, y: -0.0072404724, z: -0.04847816, w: 0.9983488}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1.0000001}
+    - name: HandL
+      parentName: Arm2L
+      position: {x: -0.00000008940697, y: 1.4164493, z: 0.000000059604645}
+      rotation: {x: 0.044790458, y: -0.25800526, z: -0.03963694, w: 0.9642905}
+      scale: {x: 0.9999999, y: 0.99999964, z: 1}
+    - name: FingersL
+      parentName: HandL
+      position: {x: -0.00000011920929, y: 0.49116254, z: -0.000000059604645}
+      rotation: {x: -0.034768526, y: 0.31867465, z: 0.02176923, w: 0.94697607}
+      scale: {x: 1.0000001, y: 1.0000005, z: 1}
+    - name: FingersL_end
+      parentName: FingersL
+      position: {x: -0, y: 0.974599, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ThumbL
+      parentName: HandL
+      position: {x: 0.1725918, y: 0.1134735, z: -0.14987063}
+      rotation: {x: -0.07989284, y: 0.27698648, z: -0.34052637, w: 0.89495105}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: ThumbL_end
+      parentName: ThumbL
+      position: {x: -0, y: 1.1261475, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leg1R
+      parentName: Hips
+      position: {x: -0.53014714, y: 0.52289057, z: -0.0000000074234965}
+      rotation: {x: 0.002913635, y: 0.09622826, z: 0.9950112, w: 0.026158432}
+      scale: {x: 1.0000006, y: 1.0000002, z: 1.0000056}
+    - name: Leg2R
+      parentName: Leg1R
+      position: {x: -0.00000013309182, y: 1.8776292, z: -0.000000038184226}
+      rotation: {x: -0.16987833, y: 0.00088835595, z: 0.024118522, w: 0.9851695}
+      scale: {x: 0.99999994, y: 0.9999998, z: 1.0000005}
+    - name: Leg2R_end
+      parentName: Leg2R
+      position: {x: -0, y: 1.8169943, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leg1L
+      parentName: Hips
+      position: {x: 0.53014714, y: 0.52289057, z: -0.0000000074234965}
+      rotation: {x: 0.007880353, y: 0.09650645, z: 0.99498427, w: -0.025113018}
+      scale: {x: 1.0000008, y: 1.0000001, z: 1.0000055}
+    - name: Leg2L
+      parentName: Leg1L
+      position: {x: -0.00000008707866, y: 1.8776283, z: -0.000000009313226}
+      rotation: {x: -0.17011674, y: 0.010385173, z: -0.02237553, w: 0.9851151}
+      scale: {x: 0.9999996, y: 0.9999997, z: 0.99999994}
+    - name: Leg2L_end
+      parentName: Leg2L
+      position: {x: -0, y: 1.8169943, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MachineGun
+      parentName: Low_Poly_Dude(Clone)
+      position: {x: 1.1935769, y: 4.6985497, z: 1.212603}
+      rotation: {x: 0.1554896, y: -0.67352265, z: 0.13404481, w: 0.71008605}
+      scale: {x: 1.0000001, y: 0.9999999, z: 0.99999976}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -266,7 +480,7 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
@@ -274,15 +488,9 @@ ModelImporter:
   humanoidOversampling: 1
   avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 0
   remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 261385
-  packageName: Fusion Shooter Brawler
-  packageVersion: 1.21
-  assetPath: Assets/Vauxland/FusionShooterBrawler/DemoResources/Models/Low_Poly_Dude.fbx
-  uploadId: 708175

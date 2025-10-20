@@ -155,6 +155,16 @@ namespace Vauxland.FusionBrawler
                 teamDeathMatchObjects.SetActive(true);
             }
 
+            if(matchType == MatchType.GunGame)
+            {
+                maxScore = 0;
+
+                foreach (int value in requiredKillsForGunGame)
+                {
+                    maxScore += value;
+                }
+            }
+
             // add all of our current players that are joined
             if (!GameIsStarting)
             {
@@ -360,6 +370,24 @@ namespace Vauxland.FusionBrawler
                 else
                 {
                     // in case of a tie, you can handle it accordingly or it defaults to team Red
+                }
+            }
+            else if(matchType == MatchType.GunGame)
+            {
+                for (int i = 0; i < _networkedPlayerIds.Count; i++)
+                {
+                    if (Runner.TryFindBehaviour(_networkedPlayerIds[i], out PlayerNetworkController playerDataNetworkedComponent) == false)
+                    {
+                        _networkedPlayerIds.RemoveAt(i);
+                        i--;
+                        continue;
+                    }
+                    if (playerDataNetworkedComponent.Kills >= maxScore)
+                    {
+                        MatchWinner = playerDataNetworkedComponent.Id;
+                        MatchEnded();
+                        return;
+                    }
                 }
             }
         }

@@ -512,6 +512,8 @@ namespace Vauxland.FusionBrawler
                         if (attackingPlayer != null && attackingPlayer != _playerManager._networkObject)
                         {
                             attackingPlayerController._playerController.AddKills(1);
+                            PlayerData killer = attackingPlayerController._playerData;
+                            GameEvents.OnPlayerKilled?.Invoke(killer, _playerManager._playerData);
 
                         }
 
