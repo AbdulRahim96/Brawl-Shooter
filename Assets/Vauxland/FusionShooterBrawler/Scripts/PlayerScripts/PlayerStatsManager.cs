@@ -513,7 +513,7 @@ namespace Vauxland.FusionBrawler
                         {
                             attackingPlayerController._playerController.AddKills(1);
                             PlayerData killer = attackingPlayerController._playerData;
-                            GameEvents.OnPlayerKilled?.Invoke(killer, _playerManager._playerData);
+                            GameEvents.OnPlayerKilled?.Invoke(killer);
 
                         }
 

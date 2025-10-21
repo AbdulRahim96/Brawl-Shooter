@@ -22,9 +22,9 @@ public class MedalSystem : MonoBehaviour
         GameEvents.OnPlayerKilled -= HandlePlayerKilled;
     }
 
-    private void HandlePlayerKilled(PlayerData killer, PlayerData victim)
+    private void HandlePlayerKilled(PlayerData killer)
     {
-        if (killer == null || victim == null) return;
+        /*if (killer == null || victim == null) return;*/
 
         if (!killTimestamps.ContainsKey(killer.playerId))
             killTimestamps[killer.playerId] = new List<float>();

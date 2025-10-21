@@ -433,6 +433,24 @@ namespace Vauxland.FusionBrawler
 
             }
         }
+
+        public void AddKill() // for testing only
+        {
+            if (!Object.HasStateAuthority) return;
+
+            foreach (var player in CurrentPlayers)
+            {
+                // check for local player
+                if (player.Value.HasInputAuthority)
+                {
+                    var _PlayerStatsManager = player.Value.GetComponent<PlayerManager>();
+                    _PlayerStatsManager._playerController.AddKills(1);
+                    GameEvents.OnPlayerKilled?.Invoke(_PlayerStatsManager._playerData);
+                    return;
+                }
+
+            }
+        }
     }
 }
 
