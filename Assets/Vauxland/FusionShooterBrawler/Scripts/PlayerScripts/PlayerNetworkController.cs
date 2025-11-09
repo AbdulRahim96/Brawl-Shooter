@@ -54,7 +54,12 @@ namespace Vauxland.FusionBrawler
         [HideInInspector]
         public List<PlayerManager> playersInHidingZone = new List<PlayerManager>(); // amount of player sin the hiding zone
 
+        public int[] requiredKillsForGunGame;
 
+        [Networked]
+        public int currentKills { get; private set; }
+        [Networked]
+        public int _currentGunGameLevel { get; private set; }
         public override void Spawned()
         {
             TeamInt = 0;
@@ -65,6 +70,7 @@ namespace Vauxland.FusionBrawler
             spawnManager.AddToEntry(Object.InputAuthority.PlayerId, this.Object);
             _cacheChangeDetector = GetChangeDetector(ChangeDetector.Source.SimulationState);
             _playerManager = GetComponent<PlayerManager>();
+            _playerManager._playerData = GetComponent<PlayerData>();
 
             // --- local player
             if (Object.HasInputAuthority)
@@ -78,6 +84,7 @@ namespace Vauxland.FusionBrawler
             {
                 Kills = 0;
                 Deaths = 0;
+                _currentGunGameLevel = 0;
             }
 
             // adds this player to the list of all players when spawned
@@ -154,7 +161,7 @@ namespace Vauxland.FusionBrawler
             _playerManager._matchManager.UpdateMatchScore(TeamInt, kills); // updates the teams scores on a kill
             AudioManager.instance.PlayCallback?.Invoke(3);
 
-            _playerManager._matchManager.GunGameUpdates(this); // updates the players gun in GunGame mode
+            GunGameUpdates(); // updates the players gun in GunGame mode
         }
 
         // records the players deaths
@@ -221,7 +228,7 @@ namespace Vauxland.FusionBrawler
         // if we can see a player hiding or not
         bool ShouldSeePlayer(PlayerNetworkController otherPlayer)
         {
-            if (this.TeamInt == otherPlayer.TeamInt && _playerManager._matchManager.matchType != MatchType.DeathMatch)
+            if (this.TeamInt == otherPlayer.TeamInt && _playerManager._matchManager.matchType != MatchType.DeathMatch && _playerManager._matchManager.matchType != MatchType.GunGame)
             {
                 // team members can always see each other
                 return true;
@@ -325,6 +332,26 @@ namespace Vauxland.FusionBrawler
         {
             TeamInt = teamInt;
         }
+
+        
+        private void GunGameUpdates()
+        {
+            if (Object.HasStateAuthority)
+            {
+                if (_playerManager._matchManager.matchType == MatchType.GunGame)
+                {
+                    currentKills++;
+                    if (currentKills >= requiredKillsForGunGame[_currentGunGameLevel])
+                    {
+                        _currentGunGameLevel++;
+                        currentKills = 0;
+                        _playerManager._playerStats.BroadcastWeaponChange(_currentGunGameLevel);
+                    }
+                }
+            }
+        }
+
+        
     }
 
 }

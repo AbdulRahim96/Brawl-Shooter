@@ -111,5 +111,6 @@ namespace Vauxland.FusionBrawler
 
             PlayerSetUp = true; // player setup is now complete and ready
         }
+
     }
 }

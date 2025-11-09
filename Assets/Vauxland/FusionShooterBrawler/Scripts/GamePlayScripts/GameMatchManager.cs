@@ -209,20 +209,7 @@ namespace Vauxland.FusionBrawler
             }
         }
 
-        public void GunGameUpdates(PlayerNetworkController player)
-        {
-            if (matchType == MatchType.GunGame)
-            {
-                currentKills++;
-                if (currentKills >= requiredKillsForGunGame[_currentGunGameLevel])
-                {
-                    _currentGunGameLevel++;
-                    currentKills = 0;
-                    player.gameObject.GetComponent<PlayerStatsManager>().AdvanceWeapon(_currentGunGameLevel);
-                    print($"GunGame Level Up! {player.gameObject.name} Now at level {_currentGunGameLevel}");
-                }
-            }
-        }
+        
 
         // syncs changing of Ui for team score across all clients
         public override void Render()

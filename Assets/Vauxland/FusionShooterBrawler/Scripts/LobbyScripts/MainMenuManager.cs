@@ -135,7 +135,7 @@ namespace Vauxland.FusionBrawler
             botAmount = PlayerPrefs.GetInt("BotAmount", 5);
             friendlyFire = PlayerPrefs.GetInt("FriendlyFire", 0) == 1;
             maxScoreAmount = PlayerPrefs.GetInt("MaxScoreAmount", 10);
-            matchTimeLength = PlayerPrefs.GetFloat("MatchTimeLength", 180f);
+            matchTimeLength = PlayerPrefs.GetFloat("MatchTimeLength", 300);
 
             useBotsToggle.isOn = useBots;
             botAmountInputField.text = botAmount.ToString();

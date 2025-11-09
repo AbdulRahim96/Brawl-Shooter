@@ -204,6 +204,9 @@ MonoBehaviour:
   _IsBot:
     _value: 0
   playersInHidingZone: []
+  requiredKillsForGunGame: 01000000020000000200000003000000020000000300000003000000030000000200000004000000
+  _currentKills: 0
+  __currentGunGameLevel: 0
 --- !u!114 &4523527020784457497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -382,6 +385,7 @@ MonoBehaviour:
   _playerInput: {fileID: 0}
   _mobileControls: {fileID: 0}
   _botController: {fileID: 0}
+  _playerData: {fileID: 0}
   _PlayerSetUp:
     _value: 0
 --- !u!114 &6934551542241411191
@@ -536,7 +540,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerData
   playerId: 
-  playerName: 
   currentKillStreak: 0
   lastKillTime: 0
 --- !u!1 &1150284355898968

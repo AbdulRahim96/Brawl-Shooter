@@ -25,6 +25,7 @@ namespace Vauxland.FusionBrawler
         public float delayBeforeShooting; // the delay before the weapon actually starts the initial stooting
         public float launchOffset; //the launch point offset to shoot the bullet further away or behind the projectile launch point position;
         public int destructibleDamage; // damage done to destructible objects
+        public bool isSingleFire = false; // is the weapon single fire (like a pistol) or automatic (like an assault rifle)
 
         public int animID; // this will be used to distinguish the weapon's animation to play in the animator
 

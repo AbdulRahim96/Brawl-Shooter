@@ -512,6 +512,7 @@ namespace Vauxland.FusionBrawler
                         if (attackingPlayer != null && attackingPlayer != _playerManager._networkObject)
                         {
                             attackingPlayerController._playerController.AddKills(1);
+                           // _playerManager._matchManager.GunGameUpdates(attackingPlayerController);
                             PlayerData killer = attackingPlayerController._playerData;
                             GameEvents.OnPlayerKilled?.Invoke(killer);
 
@@ -557,8 +558,9 @@ namespace Vauxland.FusionBrawler
         {
             // stop reloading if currently reloading
             StopReloading();
+            int _weaponid = _playerManager._matchManager.matchType == MatchType.GunGame ? _playerManager._playerController._currentGunGameLevel : weaponId;
 
-            playerWeapon = PlayerGameData.GetWeapon(weaponId); // get the chosen weapon from our list of weapon configs in the static player game data script
+            playerWeapon = PlayerGameData.GetWeapon(_weaponid); // get the chosen weapon from our list of weapon configs in the static player game data script
 
             //Debug.Log($"UpdatePlayerWeapon called. Player: {player}, WeaponID: {weaponId}"); // can uncomment these for debugging
 
@@ -928,14 +930,19 @@ namespace Vauxland.FusionBrawler
             yield return new WaitForSeconds(shieldTimer);
             HasShield = false;
         }
-
+        
         public void AdvanceWeapon(int val)
         {
+            print("advance level");
+
+            bool hasInputAuthority = Object.HasInputAuthority;
+            bool hasStateAuthority = Object.HasStateAuthority;
+            print($"Object authroity: {hasInputAuthority} and State Authority {hasStateAuthority}");
+
             RpcSetPlayerWeapon(val);
             RpcParticlePlay();
         }
 
-        // rpc used to send player weapon to the Host, we let host know hey this is our selected character and weapon and the host lets all other clients know
         [Rpc(sources: RpcSources.InputAuthority, targets: RpcTargets.StateAuthority)]
         private void RpcSetPlayerWeapon(int weaponId) //initial Weapon setting Rpc from clients
         {
@@ -967,10 +974,20 @@ namespace Vauxland.FusionBrawler
             _playerManager._matchUI.ShowKillPopup(attacker, victim, weaponName, weaponId, playerTeam);
         }
 
-        [Rpc(sources: RpcSources.InputAuthority, targets: RpcTargets.All)]
+        [Rpc(sources: RpcSources.StateAuthority, targets: RpcTargets.All)]
         private void RpcParticlePlay()
         {
             _playerManager._playerVisuals.onAdvance.Play();
+        }
+
+        public void BroadcastWeaponChange(int weaponId)
+        {
+            if (Object.HasStateAuthority)
+            {
+                WeaponID = weaponId;
+                defaultWeapon = weaponId;
+                RpcParticlePlay();
+            }
         }
     }
 }
