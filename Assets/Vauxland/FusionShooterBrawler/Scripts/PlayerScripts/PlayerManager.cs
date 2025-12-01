@@ -82,9 +82,10 @@ namespace Vauxland.FusionBrawler
             }
 
             // handle match UI setup for players and bots in DeathMatch mode
-            if (_matchManager.matchType == MatchType.DeathMatch && !_playerController.IsBot)
+            if (_matchManager.matchType == MatchType.DeathMatch || _matchManager.matchType == MatchType.GunGame && !_playerController.IsBot)
             {
                 // add player entry in the match UI
+
                 _matchUI.AddPlayerEntry(Object.InputAuthority, _playerController, 0);
 
                 // refresh Match UI texts in Spawned to set to initial values.
@@ -92,7 +93,7 @@ namespace Vauxland.FusionBrawler
                 _matchUI.UpdatePlayerKills(Object.InputAuthority, _playerController.Kills);
                 _matchUI.UpdatePlayerDeaths(Object.InputAuthority, _playerController.Deaths);
             }
-            else if (_matchManager.matchType == MatchType.DeathMatch && _playerController.IsBot)
+            else if (_matchManager.matchType == MatchType.DeathMatch || _matchManager.matchType == MatchType.GunGame && _playerController.IsBot)
             {
                 // add bot entry in the match UI
                 _matchUI.AddBotPlayerEntry(_playerController, 0);

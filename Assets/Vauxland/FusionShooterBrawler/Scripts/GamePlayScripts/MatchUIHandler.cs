@@ -343,7 +343,7 @@ namespace Vauxland.FusionBrawler
                 });
             }
 
-            if (matchManager.matchType == MatchType.DeathMatch)
+            if (matchManager.matchType == MatchType.DeathMatch || matchManager.matchType == MatchType.GunGame)
             {
                 // sort all players by kills descending
                 allPlayers.Sort((a, b) => b.Kills.CompareTo(a.Kills));

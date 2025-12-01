@@ -36387,10 +36387,6 @@ MonoBehaviour:
   playerPrefab:
     RawGuidValue: 2abf0432c00fe644a9976e4899893ddb
   pickupPrefabs:
-  - RawGuidValue: 028f10cf4f6e07148aede41877d3f2ce
-  - RawGuidValue: 64c804320f2c6884487267a32e7e8425
-  - RawGuidValue: 22405132e8d1aef4bafd40abf43a3682
-  - RawGuidValue: 6a8f539fc06ce4249acfc67aa19d85af
   - RawGuidValue: b97e6f5ba125d6a4b997b50f59224d73
   - RawGuidValue: a1cb3c8200e08c842ab5ce3933339c2d
   - RawGuidValue: c8aefaf143ca1ca4fb9eda49d1243b8e
