@@ -20,7 +20,8 @@ MonoBehaviour:
   delayBeforeShooting: 0.6
   launchOffset: 0
   destructibleDamage: 15
-  animID: 9
+  isSingleFire: 0
+  animID: 4
   isShotgun: 1
   shotgunPelletCount: 5
   shotSpreadAngleHorizontal: 10

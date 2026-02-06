@@ -179,17 +179,11 @@ namespace Vauxland.FusionBrawler
                 cacheAnimator.SetFloat("MoveSpeed", xzMagnitude);
                 cacheAnimator.SetBool("IsShooting", _playerManager._playerStats.IsShooting && _playerManager._playerStats.CanShoot);
 
-                //Updated by A.R
-                // update the animation using Final IK
-
-                bool isAiming = _playerManager._playerStats.IsShooting && _playerManager._playerStats.CanShoot;
-                float targetWeight = isAiming ? 1f : 0f;
-
-               // finalIK.solver.IKPositionWeight = Mathf.Lerp(finalIK.solver.IKPositionWeight, targetWeight, Time.deltaTime * 10f);
+                
             }
 
-            // Updated by A.R 
             cacheAnimator.SetInteger("AnimID", _playerManager._playerStats.playerWeapon != null ? _playerManager._playerStats.playerWeapon.animID : 0);
+            cacheAnimator.SetFloat("Anim", _playerManager._playerStats.playerWeapon != null ? _playerManager._playerStats.playerWeapon.animID : 0);
 
             cacheAnimator.SetBool("IsIdle", !cacheAnimator.GetBool("IsDead") || !cacheAnimator.GetBool("IsShooting"));
         }

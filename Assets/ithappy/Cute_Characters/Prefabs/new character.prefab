@@ -164,6 +164,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character
       objectReference: {fileID: 0}
+    - target: {fileID: 5179426213851672535, guid: f0a4f52c6fb78d0499d35eab1bec502a, type: 3}
+      propertyPath: m_Name
+      value: Skeleton_01
+      objectReference: {fileID: 0}
     - target: {fileID: 5826708952368782516, guid: f0a4f52c6fb78d0499d35eab1bec502a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -203,6 +207,10 @@ PrefabInstance:
     - target: {fileID: 5826708952368782516, guid: f0a4f52c6fb78d0499d35eab1bec502a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6900032317264247706, guid: f0a4f52c6fb78d0499d35eab1bec502a, type: 3}
+      propertyPath: m_Name
+      value: Body_01
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6493704240324907809, guid: f0a4f52c6fb78d0499d35eab1bec502a, type: 3}

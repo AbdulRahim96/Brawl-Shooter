@@ -21,7 +21,7 @@ MonoBehaviour:
   launchOffset: 1.2
   destructibleDamage: 2
   isSingleFire: 0
-  animID: 1
+  animID: 2
   isShotgun: 0
   shotgunPelletCount: 5
   shotSpreadAngleHorizontal: 10
