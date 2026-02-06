@@ -24,6 +24,7 @@ namespace Vauxland.FusionBrawler
 
         private Vector3 playerMovement;
         private Vector3 playerRotation;
+        private Vector3 playerRelativeMovement;
 
         protected Vector3? previousPosition;
         public Vector3 currentVelocity;
@@ -86,6 +87,11 @@ namespace Vauxland.FusionBrawler
             return currentVelocity;
         }
 
+        public Vector3 GetMovement()
+        {
+            return playerRelativeMovement;
+        }
+
         // updates player movement and rotation
         protected virtual void UpdateMovements()
         {
@@ -94,6 +100,8 @@ namespace Vauxland.FusionBrawler
             {
                 MovePlayer(playerMovement);
                 RotatePlayer(playerRotation);
+
+
             }
 
         }
@@ -150,6 +158,12 @@ namespace Vauxland.FusionBrawler
                 {
                     _cacheTransform.rotation = Quaternion.LookRotation(direction);
                 }
+
+                // movement relative to where the player is facing (shoot direction)
+                playerRelativeMovement = _cacheTransform.InverseTransformDirection(playerMovement);
+
+                // optional normalization
+                playerRelativeMovement = Vector3.ClampMagnitude(playerRelativeMovement, 1f);
             }
             else
             {
@@ -159,6 +173,11 @@ namespace Vauxland.FusionBrawler
                     Quaternion targetRotation = Quaternion.LookRotation(direction);
                     _cacheTransform.rotation = Quaternion.Slerp(_cacheTransform.rotation, targetRotation, Runner.DeltaTime * 15);
                 }
+
+                // always forward when facing movement
+                playerRelativeMovement = playerMovement.sqrMagnitude > 0.001f
+                    ? new Vector3(0f, 0f, 1f)
+                    : Vector3.zero;
             }
         }
     }

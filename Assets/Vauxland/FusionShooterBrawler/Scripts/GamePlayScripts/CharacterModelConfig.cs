@@ -22,6 +22,7 @@ namespace Vauxland.FusionBrawler
         [Header("Character's Animator")]
         public Animator _cacheAnimator; // the animator on the character model
 
+
         private GameObject weaponModel; // the weapon model object
 
         private GameObject cosmeticModel; // the cosmetic model object
@@ -68,6 +69,9 @@ namespace Vauxland.FusionBrawler
             newModel.gameObject.SetActive(true);
             return newModel;
         }
+
     }
+
+    
 }
 

@@ -16,11 +16,11 @@ MonoBehaviour:
   weaponIcon: {fileID: 2800000, guid: de6beebaeb658aa438d69c6f43d9f472, type: 3}
   weaponModel: {fileID: 2267631366011893898, guid: 93d620577b5fa1149b1d7151f880de34, type: 3}
   projectile: {fileID: 2876714186696537581, guid: c5e94df23bb43984ca441558700d2eb3, type: 3}
-  delayBetweenShots: 0
-  delayBeforeShooting: 0.1
+  delayBetweenShots: 0.5
+  delayBeforeShooting: 0.2
   launchOffset: 0
   destructibleDamage: 4
-  isSingleFire: 1
+  isSingleFire: 0
   animID: 1
   isShotgun: 0
   shotgunPelletCount: 5

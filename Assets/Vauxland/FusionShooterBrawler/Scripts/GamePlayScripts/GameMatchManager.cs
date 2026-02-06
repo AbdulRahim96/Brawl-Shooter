@@ -384,7 +384,7 @@ namespace Vauxland.FusionBrawler
         {
             if (Object.HasStateAuthority == false) return; // only Host can check this
 
-            if (matchType == MatchType.DeathMatch)
+            if (matchType == MatchType.DeathMatch || matchType == MatchType.GunGame)
             {
                 PlayerNetworkController winningPlayer = null;
                 int highestKills = 0;

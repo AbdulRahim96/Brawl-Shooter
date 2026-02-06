@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: OrangeBowTieGuy
   m_EditorClassIdentifier: 
   characterName: Orange Tie Guy
-  characterID: 2
   characterStats:
     stats:
     - statType: 0
@@ -24,4 +23,4 @@ MonoBehaviour:
       value: 2
     - statType: 1
       value: 60
-  characterModel: {fileID: -4638829355757892979, guid: e4421190a479cdc4284bbac0c1cf7619, type: 3}
+  characterModel: {fileID: 5360877548912154028, guid: ac4ce5f7e2951a048b3f8f08c71008ea, type: 3}

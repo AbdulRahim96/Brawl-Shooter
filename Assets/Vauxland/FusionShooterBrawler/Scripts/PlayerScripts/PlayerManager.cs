@@ -68,6 +68,8 @@ namespace Vauxland.FusionBrawler
                 // initialize player input
                 _playerInput = GetComponent<PlayerInputManager>();
                 _playerInput.isSet = true;
+
+                GetComponent<FogController>().Init(true); // initialize fog controller for local player
             }
             else
             {
@@ -79,6 +81,8 @@ namespace Vauxland.FusionBrawler
                     _botController = GetComponent<BotController>();
                     _botController.enabled = true; // enable bot controller
                 }
+
+                GetComponent<FogController>().Init(false); // initialize fog controller for non-local players
             }
 
             // handle match UI setup for players and bots in DeathMatch mode

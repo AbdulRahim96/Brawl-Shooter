@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: BlueBowTieGuy
   m_EditorClassIdentifier: 
   characterName: Blue Tie Guy
-  characterID: 0
   characterStats:
     stats:
     - statType: 4
@@ -24,4 +23,4 @@ MonoBehaviour:
       value: 30
     - statType: 5
       value: 2
-  characterModel: {fileID: -4638829355757892979, guid: 744c8a8fe39a3084899c670d92a41896, type: 3}
+  characterModel: {fileID: 8737372795574918559, guid: cad1ffdfca281284393d30e35a0f570a, type: 3}

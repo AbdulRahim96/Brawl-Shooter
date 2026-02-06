@@ -7,7 +7,6 @@
  * See https://unity3d.com/legal/as_terms for more information.
  */
 
-using CandyCoded.HapticFeedback;
 using Fusion;
 using System.Collections;
 using UnityEngine;
@@ -34,14 +33,12 @@ namespace Vauxland.FusionBrawler
 
         [Networked] private int _fireCount { get; set; }
         private int _currentFireCount;
-        private bool _shotReleased;
-        private bool _isSingleFire;
 
         public override void Spawned()
         {
             _playerManager = GetComponent<PlayerManager>();
         }
-        
+
         // sets the loaded weapons info for the weapons set projectile
         public void SetWeaponInfo()
         {
@@ -50,7 +47,6 @@ namespace Vauxland.FusionBrawler
             _shootDelay = playerWeapon.delayBeforeShooting;
             launchOffset = playerWeapon.launchOffset;
             _projectileLoader.SetProjectileObject(_projectile); // setting the projectile prefab from the weapon data
-            _isSingleFire = playerWeapon.isSingleFire;
         }
 
         public override void Render()
@@ -86,8 +82,6 @@ namespace Vauxland.FusionBrawler
                     {
                         cameraFollow.StartShake();
                     }
-
-                    HapticFeedback.HeavyFeedback(); // trigger haptic feedback on shooting
                 }
             }
 
@@ -172,22 +166,9 @@ namespace Vauxland.FusionBrawler
             // if holding down the shoot button
             if (input.networkButtons.IsSet(NetInputButtons.Shoot))
             {
-                // --- handle single fire mode ---
-                if (_isSingleFire)
-                {
-                    // Only allow shooting once per press (must release first)
-                    if (!_shotReleased)
-                    {
-                        // still holding the button from previous shot, do nothing
-                        return;
-                    }
-                    _shotReleased = false;
-                }
-
                 if (_playerManager._playerStats.LoadedAmmo > 0 && !_playerManager._playerStats.IsReloading)
                 {
                     _playerManager._playerStats.IsShooting = true;
-
                     if (_initialDelayApplied)
                     {
                         LaunchProjectileWithLoader();
@@ -203,6 +184,7 @@ namespace Vauxland.FusionBrawler
                 }
                 else
                 {
+                    //Debug.Log("No ammo loaded, need to reload."); uncomment for debugging
                     _playerManager._playerStats.StartReloading();
                     _playerManager._playerStats.IsShooting = false;
                 }
@@ -220,9 +202,6 @@ namespace Vauxland.FusionBrawler
 
                 // reset the initial delay flag
                 _initialDelayApplied = false;
-
-                // --- handle single fire release ---
-                _shotReleased = true; // player released the shoot button, allow next shot
             }
 
             _buttonsPrevious = input.networkButtons;
@@ -253,10 +232,12 @@ namespace Vauxland.FusionBrawler
             Vector3 launchPosition;
             if (_playerManager._playerVisuals.weaponModelComponent != null)
             {
+                print("Using weapon model component for launch position");
                 launchPosition = _playerManager._playerVisuals.weaponModelComponent.projectileLauncher.position + cacheTransform.forward * offset;
             }
             else
             {
+                print("false");
                 launchPosition = projectileLauncher.transform.position + projectileLauncher.transform.forward * offset;
             }
             launchPosition.y = projectileLauncher.transform.position.y;
