@@ -67,6 +67,7 @@ Transform:
   - {fileID: 2039105634116496322}
   - {fileID: 4195771494536641356}
   - {fileID: 3060513788363905111}
+  - {fileID: 3714221869207517523}
   m_Father: {fileID: 6521590174497866180}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &309045450280063585
@@ -1033,7 +1034,7 @@ Animator:
   m_GameObject: {fileID: 2807963483856090232}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 571adabd431d59248ab0524b96f6d52a, type: 3}
-  m_Controller: {fileID: 9100000, guid: fac54571ff27f2b46b28cd6d82cd3c4c, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4560ce53c67cdde4e901c6f21894d15c, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3979,6 +3980,37 @@ SkinnedMeshRenderer:
     m_Center: {x: 0, y: 0.04924992, z: 0.04402221}
     m_Extent: {x: 0.12511833, y: 0.051674318, z: 0.110635646}
   m_DirtyAABB: 0
+--- !u!1 &8886901079142386981
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3714221869207517523}
+  m_Layer: 0
+  m_Name: WeaponHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3714221869207517523
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8886901079142386981}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.00000003539025, y: -0.8433915, z: -0.000000037252896, w: 0.5372997}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.099999994, y: 0.10000001, z: 0.1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 5674396995430362034}
+  m_LocalEulerAnglesHint: {x: 0, y: -115, z: 0}
 --- !u!1 &9124436548060277186
 GameObject:
   m_ObjectHideFlags: 0
