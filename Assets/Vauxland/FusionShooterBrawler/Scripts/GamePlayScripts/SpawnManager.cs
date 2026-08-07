@@ -27,7 +27,10 @@ namespace Vauxland.FusionBrawler
         private NetworkPrefabRef[] pickupPrefabs; // the pickups you want to spawn
         [SerializeField] private int maxPickups = 5; // maximum number of pick-ups to be active
         public bool delayPickups; // bool to delay spawning the pickups, set false to not delay them and spawn another right after one is picked up
+        public bool randomPickupPoints = true; // bool to delay spawning the pickups, set false to not delay them and spawn another right after one is picked up
         public float pickupSpawnDelay = 5f; // pickups spawn delay
+        [SerializeField] private int spawnIndex = 0;
+        [SerializeField] private int pickupIndex = 0;
         private List<NetworkObject> activePickups = new List<NetworkObject>(); // keep track of our current pick ups in the match
 
         private bool matchReady = false;
@@ -141,8 +144,10 @@ namespace Vauxland.FusionBrawler
             int maxAttempts = 15;
             for (int i = 0; i < maxAttempts; i++)
             {
+                
                 // pick a random spawn point
-                int randomIndex = UnityEngine.Random.Range(0, spawnPoints.Length);
+                int randomIndex = randomPickupPoints ? UnityEngine.Random.Range(0, spawnPoints.Length) : spawnIndex;
+                spawnIndex = (spawnIndex + 1) % spawnPoints.Length; // loop back to the start if we reach the end
                 SpawnPoint spawnPoint = spawnPoints[randomIndex];
 
                 // get a random position within the selected spawn area
@@ -297,7 +302,8 @@ namespace Vauxland.FusionBrawler
         private void SpawnSinglePickup()
         {
             // randomly select a power-up prefab
-            int randomPowerUpIndex = Random.Range(0, pickupPrefabs.Length);
+            int randomPowerUpIndex = randomPickupPoints ? Random.Range(0, pickupPrefabs.Length) : pickupIndex;
+            pickupIndex = (pickupIndex + 1) % pickupPrefabs.Length; // loop back to the start if we reach the end
             NetworkPrefabRef powerUpPrefab = pickupPrefabs[randomPowerUpIndex];
 
             // try and get an unoccupied spawn position within the spawn area
@@ -351,7 +357,7 @@ namespace Vauxland.FusionBrawler
             int playerId = player.PlayerId;
             Vector3 spawnPosition = Vector3.zero;
 
-            if (_matchManager.matchType == MatchType.DeathMatch)
+            if (_matchManager.matchType == MatchType.DeathMatch || _matchManager.matchType == MatchType.GunGame)
             {
                 spawnPosition = GetUnoccupiedSpawnPoint(playerSpawnPoints, 5f, "Player");
             }

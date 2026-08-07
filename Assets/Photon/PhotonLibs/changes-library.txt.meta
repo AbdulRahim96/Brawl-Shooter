@@ -1,6 +1,13 @@
 fileFormatVersion: 2
 guid: d8040d310df77714a90a561261bfb2cb
 DefaultImporter:
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304226
+  packageName: Platform Shooter 2D - Photon Quantum
+  packageVersion: 
+  assetPath: Assets/Photon/PhotonLibs/changes-library.txt
+  uploadId: 0

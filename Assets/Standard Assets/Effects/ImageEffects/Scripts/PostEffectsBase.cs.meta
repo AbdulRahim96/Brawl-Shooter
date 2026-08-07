@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 3a5121bb17fb4b34bb38dab1a7f85bf9
+timeCreated: 1519855308
+licenseType: Store
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304226
+  packageName: Platform Shooter 2D - Photon Quantum
+  packageVersion: 1.0
+  assetPath: Assets/Standard Assets/Effects/ImageEffects/Scripts/PostEffectsBase.cs
+  uploadId: 717543

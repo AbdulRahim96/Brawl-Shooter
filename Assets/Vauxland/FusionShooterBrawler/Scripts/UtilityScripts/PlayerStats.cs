@@ -24,7 +24,8 @@ namespace Vauxland.FusionBrawler
         ReserveAmmo,
         LoadedAmmo,
         AttackDamage,
-        MoveSpeed
+        MoveSpeed,
+        AttackSpeed
     }
 
     [System.Serializable]

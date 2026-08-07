@@ -112,7 +112,9 @@ namespace Vauxland.FusionBrawler
             { StatType.ReserveAmmo, () => ReserveAmmo },
             { StatType.LoadedAmmo, () => LoadedAmmo },
             { StatType.AttackDamage, () => AttackDamage },
-            { StatType.MoveSpeed, () => MoveSpeed }
+            { StatType.MoveSpeed, () => MoveSpeed },
+            { StatType.AttackSpeed, () => AttackSpeed },
+
         };
 
             statSetters = new Dictionary<StatType, Action<int>>
@@ -122,7 +124,8 @@ namespace Vauxland.FusionBrawler
             { StatType.ReserveAmmo, value => ReserveAmmo = value },
             { StatType.LoadedAmmo, value => LoadedAmmo = value },
             { StatType.AttackDamage, value => AttackDamage = value },
-            { StatType.MoveSpeed, value => MoveSpeed = value }
+            { StatType.MoveSpeed, value => MoveSpeed = value },
+            { StatType.AttackSpeed, value => AttackSpeed = value }
         };
 
             activeBoosts = new Dictionary<StatType, List<int>>();
@@ -189,7 +192,7 @@ namespace Vauxland.FusionBrawler
         private IEnumerator ApplyTemporaryBoost(StatType statType, int value, float duration, bool revertAfter, bool canStack, bool stackDuration)
         {
             bool alreadyBoosted = activeBoosts[statType].Contains(value);
-
+            print(alreadyBoosted);
             if (!canStack)
             {
                 if (alreadyBoosted)
@@ -267,6 +270,8 @@ namespace Vauxland.FusionBrawler
         public int AttackDamage { get; set; }
         [Networked]
         public int MoveSpeed { get; set; }
+        [Networked]
+        public int AttackSpeed { get; set; }
 
         // for health fill bar purposes
         public virtual int TotalHp => TotalStats.GetStat(StatType.Hp);

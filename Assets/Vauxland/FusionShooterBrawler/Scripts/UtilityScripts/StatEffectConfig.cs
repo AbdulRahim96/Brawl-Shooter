@@ -65,6 +65,8 @@ namespace Vauxland.FusionBrawler
             int ticks = Mathf.CeilToInt(duration / tickInterval);
             int valuePerTick = applyFullValuePerTick ? effectValue : effectValue / ticks;
 
+            Debug.Log($"Applying {effectType} to {affectedStat} with value {effectValue} over {duration} seconds, ticking every {tickInterval} seconds. Value per tick: {valuePerTick}");
+
             switch (effectType)
             {
                 case StatusEffectType.AddOverTime:

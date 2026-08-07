@@ -279,7 +279,9 @@ namespace Vauxland.FusionBrawler
 
             _fireCount++;
             _playerManager._playerStats.LoadedAmmo -= AmmoUseAmount; // use the ammo shot
-            _shootCooldown = TickTimer.CreateFromSeconds(Runner, _playerManager._playerStats.playerWeapon.delayBetweenShots); // restart the shot cooldown
+            float Delay = _playerManager._playerStats.AttackSpeed == 0 ? _playerManager._playerStats.playerWeapon.delayBetweenShots: _playerManager._playerStats.playerWeapon.delayBetweenShots / _playerManager._playerStats.AttackSpeed;
+            print("<color=red>extra delay: " + Delay);
+            _shootCooldown = TickTimer.CreateFromSeconds(Runner, Delay); // restart the shot cooldown
         }
     }
 }

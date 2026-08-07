@@ -2261,7 +2261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03f755a1b094b3147b904b8c9f2ee6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnAreaSize: {x: 1, y: 1}
+  spawnAreaSize: {x: 2, y: 2}
   teamSpawnPointRed: 0
   teamSpawnPointBlue: 0
   pickUpSpawnPoint: 1
@@ -2877,7 +2877,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03f755a1b094b3147b904b8c9f2ee6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnAreaSize: {x: 1, y: 1}
+  spawnAreaSize: {x: 2, y: 2}
   teamSpawnPointRed: 0
   teamSpawnPointBlue: 0
   pickUpSpawnPoint: 1
@@ -3248,7 +3248,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &310083842
 Transform:
   m_ObjectHideFlags: 0
@@ -4519,7 +4519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03f755a1b094b3147b904b8c9f2ee6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnAreaSize: {x: 1, y: 1}
+  spawnAreaSize: {x: 2, y: 2}
   teamSpawnPointRed: 0
   teamSpawnPointBlue: 0
   pickUpSpawnPoint: 1
@@ -5640,6 +5640,54 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
+--- !u!1 &693851718
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 693851719}
+  - component: {fileID: 693851720}
+  m_Layer: 0
+  m_Name: PickUpSpawnPoint (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &693851719
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693851718}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.3, y: 0.12, z: 22.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1937909013}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &693851720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693851718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f755a1b094b3147b904b8c9f2ee6d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnAreaSize: {x: 4, y: 4}
+  teamSpawnPointRed: 0
+  teamSpawnPointBlue: 0
+  pickUpSpawnPoint: 1
 --- !u!1 &696977918
 GameObject:
   m_ObjectHideFlags: 0
@@ -5717,7 +5765,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03f755a1b094b3147b904b8c9f2ee6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnAreaSize: {x: 1, y: 1}
+  spawnAreaSize: {x: 2, y: 2}
   teamSpawnPointRed: 0
   teamSpawnPointBlue: 0
   pickUpSpawnPoint: 1
@@ -5773,14 +5821,16 @@ MonoBehaviour:
   playerPrefab:
     RawGuidValue: 2abf0432c00fe644a9976e4899893ddb
   pickupPrefabs:
-  - RawGuidValue: b97e6f5ba125d6a4b997b50f59224d73
-  - RawGuidValue: a1cb3c8200e08c842ab5ce3933339c2d
+  - RawGuidValue: 7638d25f68234f54ebe86a93ad9dedcb
   - RawGuidValue: c8aefaf143ca1ca4fb9eda49d1243b8e
-  - RawGuidValue: 127452511e63ef64993af2e7ca4f03b0
   - RawGuidValue: cb018185a9f9e1242af9083d331f3209
-  maxPickups: 5
+  - RawGuidValue: 127452511e63ef64993af2e7ca4f03b0
+  maxPickups: 4
   delayPickups: 1
+  randomPickupPoints: 0
   pickupSpawnDelay: 5
+  spawnIndex: 0
+  pickupIndex: 0
   playerSpawnPoints:
   - {fileID: 24914616}
   - {fileID: 779690332}
@@ -5817,16 +5867,10 @@ MonoBehaviour:
   - {fileID: 395621553}
   - {fileID: 1064526913}
   pickupSpawnPoints:
-  - {fileID: 1489339292}
-  - {fileID: 242624374}
-  - {fileID: 1114035459}
-  - {fileID: 486083543}
-  - {fileID: 1155682546}
-  - {fileID: 707583521}
-  - {fileID: 1676129481}
-  - {fileID: 1845938363}
-  - {fileID: 776482203}
-  - {fileID: 204901622}
+  - {fileID: 764281384}
+  - {fileID: 874535687}
+  - {fileID: 693851720}
+  - {fileID: 1897261301}
   _matchManager: {fileID: 445312315}
 --- !u!4 &709948169
 Transform:
@@ -6192,6 +6236,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 760574886}
   m_CullTransparentMesh: 1
+--- !u!1 &764281382
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 764281383}
+  - component: {fileID: 764281384}
+  m_Layer: 0
+  m_Name: PickUpSpawnPoint (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &764281383
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764281382}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.8, y: 0.120000005, z: 22.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1937909013}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &764281384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764281382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f755a1b094b3147b904b8c9f2ee6d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnAreaSize: {x: 4, y: 4}
+  teamSpawnPointRed: 0
+  teamSpawnPointBlue: 0
+  pickUpSpawnPoint: 1
 --- !u!1 &776482201
 GameObject:
   m_ObjectHideFlags: 0
@@ -6236,7 +6328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03f755a1b094b3147b904b8c9f2ee6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnAreaSize: {x: 1, y: 1}
+  spawnAreaSize: {x: 2, y: 2}
   teamSpawnPointRed: 0
   teamSpawnPointBlue: 0
   pickUpSpawnPoint: 1
@@ -6685,6 +6777,54 @@ MonoBehaviour:
   teamSpawnPointRed: 0
   teamSpawnPointBlue: 0
   pickUpSpawnPoint: 0
+--- !u!1 &874535685
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 874535686}
+  - component: {fileID: 874535687}
+  m_Layer: 0
+  m_Name: PickUpSpawnPoint (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &874535686
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874535685}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.4, y: 0.120000005, z: 22.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1937909013}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &874535687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874535685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f755a1b094b3147b904b8c9f2ee6d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnAreaSize: {x: 4, y: 4}
+  teamSpawnPointRed: 0
+  teamSpawnPointBlue: 0
+  pickUpSpawnPoint: 1
 --- !u!1 &903225836
 GameObject:
   m_ObjectHideFlags: 0
@@ -10615,7 +10755,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03f755a1b094b3147b904b8c9f2ee6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnAreaSize: {x: 1, y: 1}
+  spawnAreaSize: {x: 2, y: 2}
   teamSpawnPointRed: 0
   teamSpawnPointBlue: 0
   pickUpSpawnPoint: 1
@@ -10708,7 +10848,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03f755a1b094b3147b904b8c9f2ee6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnAreaSize: {x: 1, y: 1}
+  spawnAreaSize: {x: 2, y: 2}
   teamSpawnPointRed: 0
   teamSpawnPointBlue: 0
   pickUpSpawnPoint: 1
@@ -14038,7 +14178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03f755a1b094b3147b904b8c9f2ee6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnAreaSize: {x: 1, y: 1}
+  spawnAreaSize: {x: 2, y: 2}
   teamSpawnPointRed: 0
   teamSpawnPointBlue: 0
   pickUpSpawnPoint: 1
@@ -15693,7 +15833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03f755a1b094b3147b904b8c9f2ee6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnAreaSize: {x: 1, y: 1}
+  spawnAreaSize: {x: 2, y: 2}
   teamSpawnPointRed: 0
   teamSpawnPointBlue: 0
   pickUpSpawnPoint: 1
@@ -15728,6 +15868,7 @@ Transform:
   m_Children:
   - {fileID: 1765213652}
   - {fileID: 310083842}
+  - {fileID: 1937909013}
   m_Father: {fileID: 1693809204}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1693809202
@@ -17575,7 +17716,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03f755a1b094b3147b904b8c9f2ee6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnAreaSize: {x: 1, y: 1}
+  spawnAreaSize: {x: 2, y: 2}
   teamSpawnPointRed: 0
   teamSpawnPointBlue: 0
   pickUpSpawnPoint: 1
@@ -17923,6 +18064,54 @@ MonoBehaviour:
   teamSpawnPointRed: 0
   teamSpawnPointBlue: 0
   pickUpSpawnPoint: 0
+--- !u!1 &1897261299
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1897261300}
+  - component: {fileID: 1897261301}
+  m_Layer: 0
+  m_Name: PickUpSpawnPoint (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1897261300
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897261299}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 10.9, y: 0.120000005, z: 22.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1937909013}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1897261301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897261299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f755a1b094b3147b904b8c9f2ee6d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnAreaSize: {x: 4, y: 4}
+  teamSpawnPointRed: 0
+  teamSpawnPointBlue: 0
+  pickUpSpawnPoint: 1
 --- !u!43 &1915962530
 Mesh:
   m_ObjectHideFlags: 0
@@ -18101,6 +18290,41 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
+--- !u!1 &1937909012
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1937909013}
+  m_Layer: 0
+  m_Name: PickUp_SpawnPoints Test
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1937909013
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937909012}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 764281383}
+  - {fileID: 874535686}
+  - {fileID: 693851719}
+  - {fileID: 1897261300}
+  m_Father: {fileID: 1688536497}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1939501249
 GameObject:
   m_ObjectHideFlags: 0
